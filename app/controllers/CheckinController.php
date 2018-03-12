@@ -152,7 +152,9 @@ class CheckinController extends \BaseController {
 					mkdir('upload/' . $checkinId, 0777, true);
 					
 					Input::file('file')->move('upload/'. $checkinId, $file);
-					
+					if(!File::isDirectory('upload/')) {
+    Session::flash('message', "directory unavailable");
+}
 					Session::flash('message', "Submitted for approval.");
 					return Redirect::back();
 				//}			

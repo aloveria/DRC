@@ -56,11 +56,12 @@ return array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
 			'database'  => 'cpi',
-			'username'  => 'root',
-			'password'  => 'iloveRCM',
+			'username'  => 'php',
+			'password'  => 'cpi',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
+			'strict'    => 'false',
 		),
 
 		'pgsql' => array(
